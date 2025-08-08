@@ -181,16 +181,16 @@ if (ouroAtual > 0) {
 
 //Sistema de recompensa.
 
-if (XP >= 100){
-console.log(`A sabedoria se manifesta!`);
-nivel++;
-xp = 0;
-vida = 300; 
-// vida restaurada.
-console.log(`Estou pronta pra acabar com ele!`);
+if (XP >= 100) {
+    console.log(`A sabedoria se manifesta!`);
+    nivel++;
+    XP = 0;
+    vida = 300;
+    // vida restaurada.
+    console.log(`Estou pronta pra acabar com ele!`);
 } else {
     console.log(`Beatrice ainda busca mais conhecimento e experiencia`);
-    console.log(`Experiencia atual: ${xp / 100}`);
+    console.log(`Experiencia atual: ${XP / 100}`);
 }
 
 //Capítulo 3 = A Batalha Decisiva.
@@ -221,9 +221,9 @@ if (vida <= 30) {
 } else {
     console.log(`Beatrice recua, estudando o inimigo`);
     console.log(`Com um golpe calculado, corta sua defesa e recupera o fôlego.`);
-poderInimigo -= (forcaBruta / 2);
-vida += 10;
-//Recupera um pouco de vida
+    poderInimigo -= (forcaBruta / 2);
+    vida += 10;
+    //Recupera um pouco de vida
 }
 
 if (poderInimigo <= 0) {
@@ -231,6 +231,6 @@ if (poderInimigo <= 0) {
     console.log(`Beatrice apoia-dse na katana, respirando fundo.`);
     console.log(`'Fim de jogo', murmura, enquanto a equipe comemora.`);
 } else {
-    console.log (`${nomeVilao} ainda resiste, mas a chama nos olhos de Beatrice só cresce`);
+    console.log(`${nomeVilao} ainda resiste, mas a chama nos olhos de Beatrice só cresce`);
     console.log(`'Você ainda não viu nada', ela sussura, pronta para o próximo ataque.`);
 }

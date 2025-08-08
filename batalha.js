@@ -125,33 +125,68 @@ if (nivel >= 5) {
     console.log(`Querida ${nomePersonagem}. Venho em nome da Ordo Realitas a convocar para a missão mais importante que a equipe ja vivenciou nos últimos tempos. Juntei para ir com você uma equipe, chamada Força D. ${forcaD} serão seus colegas de batalha. Junte se a nós no Bar da Ivete Beicur.`);
     console.log(`E com ajuda de seus colegas, ${apelido} resolve prosseguir com sua missão.`);
 }
-console.log (``);
- console.log(`Uma névoa fria cobria o ponto de encontro naquela manhã.`);
- console.log(`Beatrice ajustava sua ${NOMEARMA} enquanto observava a equipe ${forcaD} se reunir.`);
- console.log(`O alvo era claro: ${nomeVilao} é uma ameaça que há semana assombrava as redondezas da base da Ordo Realitas.`);
+console.log(``);
+console.log(`Uma névoa fria cobria o ponto de encontro naquela manhã.`);
+console.log(`Beatrice ajustava sua ${NOMEARMA} enquanto observava a equipe ${forcaD} se reunir.`);
+console.log(`O alvo era claro: ${nomeVilao} é uma ameaça que há semana assombrava as redondezas da base da Ordo Realitas.`);
 
- //Verificação da base de nível batalha.
+//Verificação da base de nível batalha.
 
- if (nivel > 9) {
+if (nivel > 9) {
     console.log(``);
-    console.log (`Senhor Verissimo se aproximava da equipe, anunciando a missão que eles seriam levados`);
+    console.log(`Senhor Verissimo se aproximava da equipe, anunciando a missão que eles seriam levados`);
     console.log(`Apesar da força e experiencia da equipe selecionada, todos temiam. Principalmente ${apelido}, que era a mais nova entre todos da equipe`);
     console.log(`Sua colega, Elizabeth Webber, ao ver a preocupação de ${apelido}`);
     console.log(`Você é jovem demais para essa missão, ${apelido}. Talvez não volte com vida...`);
     console.log(`Mas Beatrice, comum leve sorriso no rosto, responde: 'Então voltarei com a morte ao meu lado'`);
- }
-  //Verificação de recursos especiais.
+}
+//Verificação de recursos especiais.
 
-  if (ouroAtual >= 100) {
-    console.log (`O som das moedas de ouro no bolso de Beatrice chamam a atenção.`);
+if (ouroAtual >= 100) {
+    console.log(`O som das moedas de ouro no bolso de Beatrice chamam a atenção.`);
     console.log(`Um de seus colegas de equipe brinca:'Vai pagar a próxima rodada quando voltarmos, não é?'`);
-  }
+}
 
-  //Verificação de classe
+//Verificação de classe
 
-  if (classe === "Ocultista") {
+if (classe === "Ocultista") {
     console.log(`Beatrice sente um calor subir pelos dedos -- a energia pronta para ser liberada`);
-  }  
+}
 
-  console.log(`'Todos prontos?' pergunta um dos membros da equipe.`);
-  console.log(`Beatrice apenas assente e se prepara para a caça do alvo`);
+console.log(`'Todos prontos?' pergunta um dos membros da equipe.`);
+console.log(`Beatrice apenas assente e se prepara para a caça do alvo`);
+
+//Capítulo 2: Escolha Estratégica 
+console.log(``);
+console.log(`CAPÍTULO 2: A Encruzilhada do Destino`);
+console.log(``);
+
+console.log(`A equipe avança até uma estrada dividida`);
+console.log(`Um mercador bloqueia o caminho e oferece equipamentos em troca de ouro.`);
+let precoEquipamento = 10
+//Escolhas baseadas em ouro.
+if (ouroAtual > 0) {
+    console.log(``);
+    console.log(`Com ouro suficiente, Beatrice negocia e compra equipamentos melhores`);
+    forcaBruta += 5;
+    defesaTotal += 3;
+    console.log(`Força e defesa aumentaram! ouro restante: ${ouroAtual - precoEquipamento}`);
+} else {
+    console.log(`Sem ouro suficiente!`);
+    console.log(`Não preciso de nada além da minha Katana e do meu ritual.`);
+    console.log(`A adversidade fortalece o espirito! Agilidade ${agilidade += 2}`);
+}
+
+//Sistema de recompensa.
+
+if (xp >= 100){
+console.log(`A sabedoria se manifesta!`);
+nivel++;
+xp = 0;
+vida = 300; 
+// vida restaurada.
+console.log(`Estou pronta pra acabar com ele!`);
+} else {
+    console.log(`Beatrice ainda busca mais conhecimento e experiencia`);
+    console.log(`Experiencia atual: ${xp / 100}`);
+}

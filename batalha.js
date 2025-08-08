@@ -234,3 +234,45 @@ if (poderInimigo <= 0) {
     console.log(`${nomeVilao} ainda resiste, mas a chama nos olhos de Beatrice só cresce`);
     console.log(`'Você ainda não viu nada', ela sussura, pronta para o próximo ataque.`);
 }
+//Continuação da Saga Épica. - Nível 3.
+
+let nomeDaPersonagem = nome;
+let classeDaPersonagem = classe;
+let nivelPersonagem = nivel;
+let vidaAtualPersona = vidaAtual;
+let vidaMaximaPersona = vidaMaxima;
+let experienciaPersona = experiencia;
+let ouroAtualPersona = ouroAtual;
+
+//Novos elementos para a mansão endiabrada
+//Inventário mágico.
+let Inventário = ['Poção de Recuperação', 'Katana do Outro Lado','Vestimenta Celestial' ];
+let aliados = ['Arthur Cervero', 'Dante', 'Elizabeth Webber', 'Erin Parker', 'Joui Jouki', 'Kaiser', 'Tristan Monteiro', 'Luciano Carvalho', 'Fernando Carvalho'];
+let inimigosEncontrados = ['Perturbados de Energia', 'Zumbis de Sangue', 'Titã de Sangue'];
+let salasCastelo = ['Mansão Endiabrada', 'Sala do Anfitrião', 'Quarto de Pinturas'];
+let tesouroColetado = [];
+
+console.log(``);
+console.log(`${nome} ADENTROU A MANSÃO ENDIABRADA`);
+console.log(``);
+console.log(`Após as vitórias dos níveis anteriores, nossa heróina e seus colegas de equipe segue sua missão para a Mansão Endiabrada, onde mais inimigos os esperam`);
+console.log(`Inventário inicial: ${Inventário.length} itens mágicos.`);
+
+//Capítulo 1: Descoberta de Coleções Paranormais.
+console.log(``);
+console.log(`CAPÍTULO 1: Segredos da Ordem. `);
+console.log(``);
+
+let pocaoEncontrada = [`Poção de Cura`, `Dobro da Força`, `Invisibilidade`];
+let armadilhasLocalizadas = [];
+
+console.log(`Primeira poção encontrada encontradas: ${pocaoEncontrada[0]}`);
+console.log(`Total de poções mágicas: ${pocaoEncontrada.length}`);
+
+Inventário.push(`Escudo mágico`);
+console.log(`Novo item adicionado! Inventário: ${Inventário}`);
+
+let itemRemovido = Inventário.pop(`Poção de Recuperação`);
+console.log(`Tomou a poção para se preparar para a guerra`);
+console.log(`Item removida${itemRemovido}`);
+console.log(`Invetário atual: ${Inventário}`)

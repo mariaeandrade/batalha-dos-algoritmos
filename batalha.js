@@ -145,6 +145,7 @@ if (nivel > 9) {
 if (ouroAtual >= 100) {
     console.log(`O som das moedas de ouro no bolso de Beatrice chamam a atenção.`);
     console.log(`Um de seus colegas de equipe brinca:'Vai pagar a próxima rodada quando voltarmos, não é?'`);
+    console.log(`Beatrice apenas riu e balançou a cabeça negativamente`);
 }
 
 //Verificação de classe
@@ -163,6 +164,7 @@ console.log(``);
 
 console.log(`A equipe avança até uma estrada dividida`);
 console.log(`Um mercador bloqueia o caminho e oferece equipamentos em troca de ouro.`);
+console.log(`${apelido} ao reparar que poderia usar uma atualização em seus equipamentos, se questionou se teria ouro suficiente.`)
 let precoEquipamento = 10
 //Escolhas baseadas em ouro.
 if (ouroAtual > 0) {
@@ -179,7 +181,7 @@ if (ouroAtual > 0) {
 
 //Sistema de recompensa.
 
-if (xp >= 100){
+if (XP >= 100){
 console.log(`A sabedoria se manifesta!`);
 nivel++;
 xp = 0;
@@ -206,12 +208,12 @@ if (vida <= 30) {
     console.log(`Com pouca vida, Beatrice sente o próprio sangue escorrer pelo braço`);
     console.log(`'Não posso cair agora! Ataque final com toda a força'`);
     poderInimigo -= forcaBruta;
-} else if (mana >= 50 && classe === "ocultista") {
+} else if (manaAtual >= 50 && classe === "ocultista") {
     console.log(`Beatrice fecha os olhos e começa a etoar o ritual ${NOMERITUAL}.`);
     console.log(`O ar se parte ao meio quando uma criatura colossal surge, atendendo ao chamado do ritual`);
     console.log(`'Acabe com ele!', ordena ela ao monstro invocado`);
     poderInimigo -= (forcaBruta + 20);
-    mana -= 30;
+    manaAtual -= 30;
 } else if (agilidade >= 15) {
     console.log(`Usando sua agilidade, Beatrice rola pelo chão e ataca com precisão mortal.`);
     console.log(`'Você não é rápido o bastante para mim!' provoca ela.`);

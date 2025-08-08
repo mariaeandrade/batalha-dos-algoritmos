@@ -190,3 +190,45 @@ console.log(`Estou pronta pra acabar com ele!`);
     console.log(`Beatrice ainda busca mais conhecimento e experiencia`);
     console.log(`Experiencia atual: ${xp / 100}`);
 }
+
+//Capítulo 3 = A Batalha Decisiva.
+console.log(``);
+console.log(`CAPÍTULO 3: A Batalha Decisiva.`);
+console.log(``);
+
+console.log(`Ao chegarem ao coração da ${localAtual},  o ar fica mais denso.`);
+console.log(`Entre colunas quebradas e símbolos desconhecidos, surge ${nomeVilao}.`);
+console.log(`'Preparem-se' grita Beatrice.`);
+
+let poderInimigo = 80;
+
+if (vida <= 30) {
+    console.log(`Com pouca vida, Beatrice sente o próprio sangue escorrer pelo braço`);
+    console.log(`'Não posso cair agora! Ataque final com toda a força'`);
+    poderInimigo -= forcaBruta;
+} else if (mana >= 50 && classe === "ocultista") {
+    console.log(`Beatrice fecha os olhos e começa a etoar o ritual ${NOMERITUAL}.`);
+    console.log(`O ar se parte ao meio quando uma criatura colossal surge, atendendo ao chamado do ritual`);
+    console.log(`'Acabe com ele!', ordena ela ao monstro invocado`);
+    poderInimigo -= (forcaBruta + 20);
+    mana -= 30;
+} else if (agilidade >= 15) {
+    console.log(`Usando sua agilidade, Beatrice rola pelo chão e ataca com precisão mortal.`);
+    console.log(`'Você não é rápido o bastante para mim!' provoca ela.`);
+    poderInimigo -= forcaBruta;
+} else {
+    console.log(`Beatrice recua, estudando o inimigo`);
+    console.log(`Com um golpe calculado, corta sua defesa e recupera o fôlego.`);
+poderInimigo -= (forcaBruta / 2);
+vida += 10;
+//Recupera um pouco de vida
+}
+
+if (poderInimigo <= 0) {
+    console.log(`Com um golpe final, o ${nomeVilao} cai.`);
+    console.log(`Beatrice apoia-dse na katana, respirando fundo.`);
+    console.log(`'Fim de jogo', murmura, enquanto a equipe comemora.`);
+} else {
+    console.log (`${nomeVilao} ainda resiste, mas a chama nos olhos de Beatrice só cresce`);
+    console.log(`'Você ainda não viu nada', ela sussura, pronta para o próximo ataque.`);
+}
